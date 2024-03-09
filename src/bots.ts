@@ -21,3 +21,5 @@ bot.onText(/\/commands/, async (msg) => {
   const data = await bot.getMyCommands();
   bot.sendMessage(msg.chat.id, JSON.stringify(data, null, 2));
 });
+
+console.log("Bots is running");
