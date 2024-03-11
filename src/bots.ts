@@ -1,7 +1,9 @@
 import TelegramBot from "node-telegram-bot-api";
 import "dotenv/config";
 
-console.log(process.env.TOKEN);
+export const config = {
+  runtime: "edge",
+};
 
 const bot = new TelegramBot(process.env.TOKEN!, { polling: true });
 
